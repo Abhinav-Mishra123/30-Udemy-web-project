@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 170, 170);
+}
+.follow,
+.menu-link {
+    font-size: 2rem;
+    margin-right: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-right: 4rem;
+
+
+}
+.follow {
+    pointer-events: auto;
+}
+.menu  {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+}
+.menu:hover {
+    pointer-events: auto;
+}
+.line {
+    width: 10rem;
+    height: 0.1rem;
+    position: relative;
+    margin-right: 5rem;
+}
+.line::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s;
+    background-color: #fff;
+}
+.menu:hover .line::after {
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+}
+.menu-link {
+    position: relative;
+    top: 5rem;
+    opacity: 0;
+margin:0rem 0.5rem;
+border-radius: 0.5rem;
+font-size: 1.8rem;
+}
+.menu:hover .menu-link {
+    top: 0;
+    opacity: 1;
+}
+.menu-link:nth-child(1) {
+    transition: top 0.5s 0.1s, opacity 0.5s 0.1s,background-color 0.3s;
+}
+.menu-link:nth-child(2) {
+    transition: top 0.5s 0.2s, opacity 0.5s 0.2s,background-color 0.4s;
+}
+.menu-link:nth-child(3) {
+    transition: top 0.5s 0.3s, opacity 0.5s 0.3s, background-color 0.3s;
+  }
+  
+  .menu-link:nth-child(4) {
+    transition: top 0.5s 0.4s, opacity 0.5s 0.4s, background-color 0.3s;
+  }
+  
+  .menu-link:nth-child(5) {
+    transition: top 0.5s 0.5s, opacity 0.5s 0.5s, background-color 0.3s;
+  }
+  
+  .menu-link:nth-child(1):hover {
+    background-color: #3b5998;
+  }
+  
+  .menu-link:nth-child(2):hover {
+    background-color: #3f729b;
+  }
+  
+  .menu-link:nth-child(3):hover {
+    background-color: #55acee;
+  }
+  
+  .menu-link:nth-child(4):hover {
+    background-color: #0077b5;
+  }
+  
+  .menu-link:nth-child(5):hover {
+    background-color: #cd201f;
+  }
+  
